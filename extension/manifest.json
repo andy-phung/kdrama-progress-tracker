@@ -1,0 +1,18 @@
+{
+	"name": "kdrama-status",
+	"version": "1.0",
+	"description": "just for fun!",
+	"permissions": ["declarativeContent", "activeTab", "tabs", "downloads", "alarms"],
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": [
+            "https://www.dramacool9.co/*"
+          ]
+        }
+    ],
+    "action": {
+    	"default_popup": "popup.html"
+    },
+	"manifest_version": 3
+}
